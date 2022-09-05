@@ -7,8 +7,8 @@
 
 PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/omni_TB8505F.mk
-    #$(LOCAL_DIR)/twrp_TB8505F.mk
+    $(LOCAL_DIR)/twrp_TB8505F.mk
 
 COMMON_LUNCH_CHOICES := \
-    omni_TB8505F-eng
-    #twrp_TB8505F-eng
+    omni_TB8505F-eng \
+    twrp_TB8505F-eng
