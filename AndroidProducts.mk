@@ -6,7 +6,7 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/omni_TB8505F.mk
+    $(LOCAL_DIR)/omni_TB8505F.mk \
     $(LOCAL_DIR)/twrp_TB8505F.mk
 
 COMMON_LUNCH_CHOICES := \
