@@ -46,7 +46,7 @@ BOARD_HAS_NO_SELECT_BUTTON := true
 
 # Kernel
 BOARD_KERNEL_IMAGE_NAME := Image.gz-dtb
-BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 buildvariant=user
+BOARD_KERNEL_CMDLINE := bootopt=64S3,32N2,64N2 androidboot.selinux=permissive androidboot.usbconfigfs=true androidboot.init_fatal_reboot_target=recovery
 TARGET_PREBUILT_KERNEL := $(DEVICE_PATH)/prebuilt/Image.gz-dtb
 BOARD_PREBUILT_DTBOIMAGE := $(DEVICE_PATH)/prebuilt/dtbo.img
 TARGET_PREBUILT_DTB := $(DEVICE_PATH)/prebuilt/dtb.img
@@ -56,7 +56,7 @@ TARGET_KERNEL_SOURCE := kernel/lenovo/TB8505F
 TARGET_KERNEL_CONFIG := akita_row_wifi_defconfig
 TARGET_KERNEL_CLANG_COMPILE := true
 BOARD_BOOTIMG_HEADER_VERSION := 2
-#BOARD_INCLUDE_DTB_IN_BOOTIMG := true
+BOARD_INCLUDE_DTB_IN_BOOTIMG := true
 BOARD_INCLUDE_RECOVERY_DTBO := true
 BOARD_KERNEL_BASE := 0x40078000
 BOARD_KERNEL_PAGESIZE := 2048
@@ -133,11 +133,11 @@ TW_RECOVERY_ADDITIONAL_RELINK_LIBRARY_FILES += \
 # TWRP Advanced Configuration
 TW_DEFAULT_LANGUAGE := en
 TW_EXTRA_LANGUAGES := true
-TW_SCREEN_BLANK_ON_BOOT := true
+#TW_SCREEN_BLANK_ON_BOOT := true
 TW_INPUT_BLACKLIST := "hbtp_vm"
 TW_USE_TOOLBOX := true
-TW_EXCLUDE_TWRPAPP := true
-TW_EXCLUDE_SUPERSU := true
+#TW_EXCLUDE_TWRPAPP := true
+#TW_EXCLUDE_SUPERSU := true
 TWRP_INCLUDE_LOGCAT := true
 TARGET_USES_LOGD := true
 TW_BRIGHTNESS_PATH := "/sys/class/leds/lcd-backlight/brightness"
