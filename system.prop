@@ -2,20 +2,11 @@
 ro.mediatek.platform=MT6761
 ro.boot.avb_version=2.0
 ro.boot.vbmeta.avb_version=2.0
-ro.actionable_compatible_property.enabled=true
-ro.postinstall.fstab.prefix=/system
 ro.secure=1
 security.perf_harden=1
 ro.adb.secure=1
-ro.factory_mode=0
 ro.debuggable=1
 persist.sys.usb.config=mtp,adb
-ro.vndk.version=29
-ro.mount.fs=EXT4
-
-ro.opengles.version=196610
-# ro.kernel.qemu=1
-# ro.kernel.qemu.gles=0
 
 ro.sys.usb.storage.type=mtp
 ro.board.platform=mt6761
