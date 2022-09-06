@@ -1,8 +1,0 @@
-[
-  {
-    "remote": "github",
-    "repository": "CoderCharmander/tb8505f-kernel",
-    "target_path": "kernel/lenovo/TB8505F",
-    "revision": "master"
-  }
-]
