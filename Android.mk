@@ -7,6 +7,9 @@
 
 LOCAL_PATH := $(call my-dir)
 
+RECOVERY_API_VERSION := 3
+RECOVERY_FSTAB_VERSION := 2
+
 ifeq ($(TARGET_DEVICE),TB8505F)
 include $(call all-subdir-makefiles,$(LOCAL_PATH))
 endif
