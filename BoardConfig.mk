@@ -156,3 +156,20 @@ TW_INCLUDE_CRYPTO := true
 TW_INCLUDE_CRYPTO_FBE := true
 TW_INCLUDE_FBE_METADATA_DECRYPT := true
 LC_ALL="C"
+
+# use SHRP Stuff
+
+SHRP_MAINTAINER := carlodeeCrypton
+SHRP_DEVICE_CODE := cannong
+SHRP_PATH := device/xiaomi/cannong
+SHRP_REC_TYPE := Treble
+SHRP_DEVICE_TYPE := A_Only
+SHRP_NOTCH := true
+SHRP_EDL_MODE := 1
+SHRP_EXTERNAL := /external_sd
+SHRP_INTERNAL := /sdcard
+SHRP_OTG := /usb_otg
+SHRP_FLASH := 1
+SHRP_DARK := true
+SHRP_REC := /dev/block/bootdevice/by-name/recovery
+SHRP_EXPRESS := true
